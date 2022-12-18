@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form for example</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="form_Wrapper">
+        <form action="" class="login_form">
+            <div class="user_icon"></div>
+            <h2>MEMBER LOGIN</h2>
+            <div class="field_wrapper">
+                <div><input type="text" id="login_field" required></div>
+                <label for="login_field">Login</label>
+            </div>
+            <div class="field_wrapper">
+                <input type="text" id="password_field" required>
+                <label for="password_field">Password</label>
+            </div>
+            <div class="forgot_remember">
+                <div>
+                    <input type="checkbox" name="remember_me">
+                    <label for="remember_me">Remember me</label>
+                </div>
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="login_wrapper">
+                <button type="submit" id="login">Login</button>
+            </div>
+            <div class="create_account">
+                <h4>Not a member?</h4>
+                <button type="button" id="logButton">Create account</button>
+            </div>
+        </form>
+        <form action="" class="register_form hideForm">
+            <div class="user_icon"></div>
+            <h2>REGISTER MEMBER</h2>
+            <div class="field_wrapper">
+                <div><input type="text" id="login_field" required></div>
+                <label for="login_field">Login</label>
+            </div>
+            <div class="field_wrapper">
+                <input type="email" id="password_field" required>
+                <label for="password_field">EMail</label>
+            </div>
+            <div class="field_wrapper">
+                <input type="password" id="password_field" required>
+                <label for="password_field">Password</label>
+            </div>
+            <div class="field_wrapper">
+                <input type="password" id="password_field" required>
+                <label for="password_field">Confirm Password</label>
+            </div>
+            <div class="login_wrapper">
+                <button type="submit" id="login">Register</button>
+            </div>
+            <div class="create_account">
+                <h4>Allready a member?</h4>
+                <button type="button" id="regButton">LogIn</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

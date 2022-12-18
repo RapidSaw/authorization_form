@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Montserrat;
+    color: orange;
+}
+
+form {
+    width: 300px;
+    margin: 50px auto 0 auto;
+}
+
+.user_icon {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: url(img/user_icon.png) white no-repeat center center;
+    background-size: 100px 100px ;
+}
+
+h2 {
+    margin: 25px 0px;
+    text-align: center;
+}
+
+.field_wrapper {
+    position: relative;
+}
+
+.field_wrapper input {
+    color: white;
+    padding-left: 15px;
+    width: 100%;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    background: transparent url(img/user_icon.png) no-repeat left center;
+    background-size: 40px 40px;
+    transition: .2s;
+    outline: none;
+}
+
+.field_wrapper input:hover {
+    border: 5px solid rgba(255, 255, 255, 0.593);
+    transition: .2s;
+}
+
+.field_wrapper .input_active {
+    border-color: rgba(255, 255, 255, 0.593);
+    background: none;
+    transition: .5s;
+}
+
+.field_wrapper label {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    padding: 15px 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.field_wrapper .label_active {
+    font-size: 14px;
+    color: orange;
+    top: -40px;
+    left: 30px;
+    transition: .5s;
+}
+
+.forgot_remember {
+    margin-bottom: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.login_wrapper {
+    margin: 0 auto;
+    width: 70%;
+}
+
+#login {
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+    background-color: orange;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+#login:hover {
+    opacity: 0.8;
+}
+
+.create_account {
+    text-align: center;
+    margin: 30px auto 0 auto;
+}
+
+.create_account button {
+    width: 60%;
+    color: white;
+    height: 40px;
+    border: 5px solid white;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    background: transparent;
+    opacity: 0.9;
+    outline: none;
+    transition: 0.2s;
+}
+
+.create_account button:hover {
+    transition: 0.2s;
+    font-size: 18px;
+    border: 3px solid white;
+    opacity: 0.7;
+}
+
+.hideForm {
+    display: none;
+}
